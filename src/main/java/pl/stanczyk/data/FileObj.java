@@ -1,9 +1,8 @@
-package pl.stanczyk;
+package pl.stanczyk.data;
 
 public class FileObj extends Response {
 
     private String name;
-    private String info;
     private String content;
 
     public FileObj(String name, String info, String content) {

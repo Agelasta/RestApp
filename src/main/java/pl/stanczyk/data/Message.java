@@ -1,8 +1,6 @@
-package pl.stanczyk;
+package pl.stanczyk.data;
 
 public class Message extends Response {
-
-    private String info;
 
     public Message() {
     }
