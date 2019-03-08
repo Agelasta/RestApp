@@ -1,0 +1,27 @@
+creating file
+
+POST {
+ "name" : "file1",
+ "content": "text1",
+ "info": "create"
+}
+
+appending text
+
+POST {
+ "name" : "file1",
+ "content": "text2",
+ "info": "append"
+}
+
+reading file
+
+GET http://localhost:8080/files?name=file1
+
+overriding file
+
+POST {
+ "name" : "file1",
+ "content": "text3",
+ "info": "create"
+}
