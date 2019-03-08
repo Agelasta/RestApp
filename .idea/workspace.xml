@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dace399-59d5-4f16-b72f-861f123afa3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/pl/stanczyk/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/pl/stanczyk/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/pl/stanczyk/FileManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/pl/stanczyk/FileObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/data/FileObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/pl/stanczyk/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/data/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/pl/stanczyk/Response.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/FileManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/FileManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/FileObj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/Response.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FileManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FileManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FileManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FileManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/stanczyk/service/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/stanczyk/service/FileManager.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,11 +33,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FileManagerTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1489">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="731">
+              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/data/FileObj.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/application/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,11 +144,11 @@
         <option value="$PROJECT_DIR$/properties/invalidPath.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/stanczyk/application/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/stanczyk/interfaces/FileManagement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/FileManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FileManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ControllerTest.java" />
       </list>
     </option>
   </component>
@@ -165,6 +186,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,28 +203,19 @@
               <item name="restapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="restapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="restapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stanczyk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -213,7 +226,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552003625853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552038513924" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/restapp" />
@@ -231,9 +244,19 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\Pobrane\Java\EXENCE\restapp\test" />
+      <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src\main" />
+      <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src\main\java" />
+      <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.stan" />
       <recent name="pl.stanczyk.test" />
+      <recent name="pl.stanczyk" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="pl.stanczyk" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -241,16 +264,6 @@
       <recent name="C:\Users\AGELASTA\IdeaProjects\restapp" />
       <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src\main\resources" />
       <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\Properties" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="pl.stanczyk" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="I:\Pobrane\Java\EXENCE\restapp\test" />
-      <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src\main" />
-      <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src\main\java" />
-      <recent name="C:\Users\AGELASTA\IdeaProjects\restapp\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -266,6 +279,25 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.FileManagerTest">
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restapp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.shouldReturnErrorNameWhileRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restapp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnErrorNameWhileRead" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restapp" />
       <option name="PACKAGE_NAME" value="" />
@@ -280,26 +312,6 @@
       <option name="PACKAGE_NAME" value="pl.stan" />
       <option name="MAIN_CLASS_NAME" value="pl.stan.FileManagerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileManagerTest.shouldCreateFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restapp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FileManagerTest" />
-      <option name="METHOD_NAME" value="shouldCreateFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileManagerTest.shouldReturnErrorNotExistWhileAppend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restapp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FileManagerTest" />
-      <option name="METHOD_NAME" value="shouldReturnErrorNotExistWhileAppend" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -330,10 +342,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FileManagerTest" />
+        <item itemvalue="JUnit.ControllerTest" />
+        <item itemvalue="JUnit.ControllerTest.shouldReturnErrorNameWhileRead" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.FileManagerTest.shouldReturnSuccessAddMessage" />
-        <item itemvalue="JUnit.FileManagerTest.shouldCreateFile" />
-        <item itemvalue="JUnit.FileManagerTest.shouldReturnErrorNotExistWhileAppend" />
       </list>
     </recent_temporary>
   </component>
@@ -364,44 +376,45 @@
       <workItem from="1551953575225" duration="3243000" />
       <workItem from="1551965271914" duration="19891000" />
       <workItem from="1551985526019" duration="4939000" />
-      <workItem from="1551994350008" duration="8400000" />
+      <workItem from="1551994350008" duration="8703000" />
+      <workItem from="1552033659720" duration="4687000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileManagerTest_shouldAppendTextToFile - 2019.03.08 at 00h 07m 37s.xml">
-      <configuration name="FileManagerTest.shouldAppendTextToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileManagerTest_shouldReturnErrorNotExistWhileAppend - 2019.03.08 at 00h 09m 46s.xml">
-      <configuration name="FileManagerTest.shouldReturnErrorNotExistWhileAppend" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileManagerTest_shouldCreateFile - 2019.03.08 at 00h 11m 53s.xml">
-      <configuration name="FileManagerTest.shouldCreateFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileManagerTest_shouldCreateFile - 2019.03.08 at 00h 12m 10s.xml">
-      <configuration name="FileManagerTest.shouldCreateFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileManagerTest_shouldCreateFile - 2019.03.08 at 00h 12m 40s.xml">
-      <configuration name="FileManagerTest.shouldCreateFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileManagerTest_shouldCreateFile - 2019.03.08 at 00h 13m 14s.xml">
-      <configuration name="FileManagerTest.shouldCreateFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileManagerTest - 2019.03.08 at 00h 14m 28s.xml">
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 25m 15s.xml">
       <configuration name="FileManagerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileManagerTest_shouldReturnSuccessAddMessage - 2019.03.08 at 00h 15m 04s.xml">
+    <history-entry file="FileManagerTest_shouldCreateText - 2019.03.08 at 10h 26m 10s.xml">
+      <configuration name="FileManagerTest.shouldCreateText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManagerTest_shouldReturnSuccessAddMessage - 2019.03.08 at 10h 26m 33s.xml">
       <configuration name="FileManagerTest.shouldReturnSuccessAddMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileManagerTest_shouldReturnSuccessAddMessage - 2019.03.08 at 00h 15m 54s.xml">
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 29m 10s.xml">
+      <configuration name="FileManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 30m 36s.xml">
+      <configuration name="FileManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 34m 35s.xml">
+      <configuration name="FileManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 35m 40s.xml">
+      <configuration name="FileManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManagerTest_shouldReturnSuccessAddMessage - 2019.03.08 at 10h 37m 23s.xml">
       <configuration name="FileManagerTest.shouldReturnSuccessAddMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileManagerTest - 2019.03.08 at 00h 50m 25s.xml">
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 41m 01s.xml">
+      <configuration name="FileManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManagerTest - 2019.03.08 at 10h 41m 17s.xml">
       <configuration name="FileManagerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118709000" />
+    <option name="totallyTimeSpent" value="123699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,9 +426,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="14" width="1261" height="934" extended-state="1" />
+    <frame x="0" y="14" width="1261" height="934" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32556203" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3313905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -425,7 +439,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25685784" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35162094" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -483,38 +497,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties/path.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="476">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/data/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="129" column="51" lean-forward="true" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/data/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
+            <element signature="e#109#110#0" expanded="true" />
             <element signature="e#139#140#0" expanded="true" />
           </folding>
         </state>
@@ -530,24 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/data/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/FileManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/data/FileObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="2414">
+          <caret line="142" column="61" lean-forward="true" selection-start-line="142" selection-start-column="61" selection-end-line="142" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -556,18 +547,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FileManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/data/FileObj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1489">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/properties/path.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/stanczyk/service/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

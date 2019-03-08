@@ -16,13 +16,13 @@ public class Controller {
         this.manager = manager;
     }
 
-    @PostMapping(value = "/files")
+    @PostMapping("/files")
     public Response createText(@RequestBody FileObj file) {
 
         return manager.createText(file);
     }
 
-    @GetMapping(value = "/files")
+    @GetMapping("/files")
     public Response readFile(@RequestParam(value = "name", defaultValue = "") String fileName) {
 
         return manager.readText(fileName);

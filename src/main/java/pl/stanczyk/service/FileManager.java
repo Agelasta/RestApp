@@ -41,7 +41,7 @@ public class FileManager implements FileManagement {
     public Response createText(FileObj file) {
 
         String action = file.getInfo();
-        Response response = null;
+        Response response;
 
         if(action == null) {
             response = new Message(ERROR_ACTION);
@@ -49,8 +49,12 @@ public class FileManager implements FileManagement {
         else {
             if (CREATE.equals(action)) {
                 response = createNewFile(file);
-            } else if (APPEND.equals(action)) {
+            }
+            else if (APPEND.equals(action)) {
                 response = appendText(file);
+            }
+            else {
+                response = new Message(ERROR);
             }
         }
         return response;
@@ -66,7 +70,8 @@ public class FileManager implements FileManagement {
 
         if (name == null || text == null) {
             message = new Message(ERROR_DATA);
-        } else {
+        }
+        else {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
                 writer.write(text);
                 message = new Message(SUCCESS_CREATE);
@@ -88,10 +93,12 @@ public class FileManager implements FileManagement {
 
         if (name == null || text == null) {
             message = new Message(ERROR_DATA);
-        } else {
+        }
+        else {
             if (!file.exists()) {
                 message = new Message(ERROR_NOT_EXIST);
-            } else {
+            }
+            else {
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
                     writer.newLine();
                     writer.write(text);

@@ -66,6 +66,7 @@ public class FileManagerTest {
         FileObj object = new FileObj("file", "create", "text");
         String filePath = path + object.getName() + ".txt";
         File file = new File(filePath);
+
         manager.createText(object);
 
         assertThat(file).exists();
@@ -77,6 +78,7 @@ public class FileManagerTest {
         FileObj object = new FileObj("file", "create", "createdText");
         String filePath = path + object.getName() + ".txt";
         File file = new File(filePath);
+
         manager.createText(object);
 
         assertThat(file).hasContent(object.getContent());
@@ -86,7 +88,7 @@ public class FileManagerTest {
 
     @Test
     public void shouldReturnErrorDataNameMessageWhileAppend() {
-        FileObj nameNull = new FileObj(null, "append", "text");
+        FileObj nameNull = new FileObj(null, "append", "appendedText");
         String response = manager.createText(nameNull).getInfo();
 
         assertThat(response).isEqualTo(FileManager.ERROR_DATA);
@@ -105,32 +107,36 @@ public class FileManagerTest {
 
         File file = new File(path);
         String[] list = file.list();
-        String fileName;
+        String nonExistingFileName;
 
         if(list.length == 0) {
-            fileName = "anyName";
-        }
-        else {
+            nonExistingFileName = "anyName";
+        } else if(list.length == 1) {
+            nonExistingFileName = list[0];
+        } else {
             StringBuilder builder = new StringBuilder();
 
             for (String s : list) {
                 builder.append(s);
             }
-            fileName = builder.toString();
+            nonExistingFileName = builder.toString();
         }
-
-        FileObj fileNotExist = new FileObj(fileName, "append", "text");
-        String response = manager.createText(fileNotExist).getInfo();
+        FileObj object = new FileObj(nonExistingFileName, "append", "appendedText");
+        String response = manager.createText(object).getInfo();
 
         assertThat(response).isEqualTo(FileManager.ERROR_NOT_EXIST);
     }
 
     @Test
-    public void shouldReturnSuccessAddMessage() {
-        FileObj object = new FileObj("file", "append", "text");
-        String response = manager.createText(object).getInfo();
+    public void shouldReturnSuccessAddMessage() throws IOException {
+        FileObj fileCreated = new FileObj("file", "create", "text");
+        manager.createText(fileCreated);
+
+        FileObj textAppended = new FileObj("file", "append", "appendedText");
+        String response = manager.createText(textAppended).getInfo();
 
         assertThat(response).isEqualTo(FileManager.SUCCESS_ADD);
+        Files.delete(Paths.get(manager.readText(textAppended.getName()).getInfo()));
     }
 
     @Test
@@ -144,7 +150,6 @@ public class FileManagerTest {
         File file = new File(filePath);
 
         String currentText = fileCreated.getContent();
-
         manager.createText(textAppended);
 
         assertThat(file).hasContent(currentText + System.lineSeparator() + textAppended.getContent());
@@ -152,25 +157,26 @@ public class FileManagerTest {
     }
 
     @Test
-    public void shouldNotCreateFileWhileAppend() {
+    public void shouldNotCreateFileIfFileDoesNotExistWhileAppend() {
 
         File file = new File(path);
         String[] list = file.list();
-        String fileName;
+        String nonExistingFileName;
 
         if(list.length == 0) {
-            fileName = "anyName";
-        }
-        else {
+            nonExistingFileName = "anyName";
+        } else if(list.length == 1) {
+            nonExistingFileName = list[0];
+        } else {
             StringBuilder builder = new StringBuilder();
 
             for (String s : list) {
                 builder.append(s);
             }
-            fileName = builder.toString();
+            nonExistingFileName = builder.toString();
         }
-        FileObj object = new FileObj(fileName, "append", "appendedText");
-        String filePath = path + fileName + ".txt";
+        FileObj object = new FileObj(nonExistingFileName, "append", "appendedText");
+        String filePath = path + nonExistingFileName + ".txt";
         File newFile = new File(filePath);
 
         manager.createText(object);
@@ -199,7 +205,7 @@ public class FileManagerTest {
     @Test
     public void shouldReadFileNameAndFilePath() throws IOException {
 
-        FileObj object = new FileObj("expectedFileName", "create", "expectedText");
+        FileObj object = new FileObj("expectedFileName", "create", "text");
         String filePath = path + object.getName() + ".txt";
         manager.createText(object);
 
@@ -216,30 +222,39 @@ public class FileManagerTest {
 
         File file = new File(path);
         String[] list = file.list();
-        String fileName;
+        String nonExistingFileName;
 
         if(list.length == 0) {
-            fileName = "anyName";
-        }
-        else {
+            nonExistingFileName = "anyName";
+        } else if(list.length == 1) {
+            nonExistingFileName = list[0];
+        } else {
             StringBuilder builder = new StringBuilder();
 
             for (String s : list) {
                 builder.append(s);
             }
-            fileName = builder.toString();
+            nonExistingFileName = builder.toString();
         }
-        String response = manager.readText(fileName).getInfo();
+        String response = manager.readText(nonExistingFileName).getInfo();
 
         assertThat(response).isEqualTo(FileManager.ERROR_READ);
     }
 
     @Test
-    public void shouldReturnErrorWhenPathDoesNotExist() {
+    public void shouldReturnErrorWhenPathDoesNotExistWhileCreate() {
         FileObj object = new FileObj("D:/Java/file", "create", "text");
         String response = manager.createText(object).getInfo();
 
         assertThat(response).isEqualTo(FileManager.ERROR);
+    }
+
+    @Test
+    public void shouldReturnErrorWhenPathDoesNotExistWhileAppend() {
+        FileObj object = new FileObj("D:/Java/file", "append", "text");
+        String response = manager.createText(object).getInfo();
+
+        assertThat(response).isEqualTo(FileManager.ERROR_NOT_EXIST);
     }
 }
 
